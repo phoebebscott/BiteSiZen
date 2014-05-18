@@ -1,0 +1,7 @@
+<%= form_for @bite do |f| %>
+
+	<h2><strong>Chef</strong> <%= f.text_field :chef, class: "form-control" %></h2>
+	<h2><strong>Bite</strong> <%= f.text_field :bite, class: "form-control" %></h2>
+	<%= f.submit "Serve this bite!", class: "btn" %>
+
+<% end %>

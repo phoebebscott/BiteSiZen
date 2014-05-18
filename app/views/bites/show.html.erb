@@ -1,0 +1,15 @@
+<h1>Check out this delicious morsel of bite-sized zen! Yum!</h1>
+<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4 border">
+				<h2><strong>Chef</strong> <%= @bite.chef %></h2>
+				<h2><strong>Bite</strong> <%= @bite.bite %></h2>
+
+				<%= link_to " ", edit_bite_path(@bite), class: "glyphicon glyphicon-pencil show-link" %>
+
+				<%= link_to " ", @bite, {method: :delete, data: {confirm: "Are you sure you want to toss that bite? It looks deliciously zen!"}, class: "glyphicon glyphicon-trash show-link"} %>
+
+				<%= link_to "Back to the menu!", bites_path, class: "show-link"%>
+			</div>
+			<div class="col-md-4"></div>
+</div>
