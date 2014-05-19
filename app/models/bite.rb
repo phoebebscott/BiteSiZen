@@ -8,4 +8,6 @@ class Bite
   validates :chef, presence: :true
   validates :bite, presence: :true
 
+  belongs_to :user
+
 end

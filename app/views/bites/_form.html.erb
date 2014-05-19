@@ -2,6 +2,7 @@
 
 	<h2><strong>Chef</strong> <%= f.text_field :chef, class: "form-control" %></h2>
 	<h2><strong>Bite</strong> <%= f.text_field :bite, class: "form-control" %></h2>
-	<%= f.submit "Serve this bite!", class: "btn" %>
+	<%= f.submit "Serve this bite!", class: "btn btn-lg btn-warning" %>
+  <%= link_to "Back to the menu!", bites_path, class: "btn btn-primary btn-lg" %>
 
 <% end %>

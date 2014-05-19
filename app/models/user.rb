@@ -8,6 +8,8 @@ class User
 
   validates :email, :name, uniqueness: :true, presence: :true
 
+  has_many :bites
+
   def password
   	@password
   end

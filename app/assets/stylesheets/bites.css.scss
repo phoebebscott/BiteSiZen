@@ -5,53 +5,65 @@
 
 @import 'bootstrap';
 
+$bluecolor: #0B486B;
 
 h1 {
   text-align: center;
   color: white; }
 
-h2 { color: #0B486B; }
+h2 {
+  color: $bluecolor;
+  text-align: center;
+  }
 
-h3 { color: #0B486B; }
+h3 {
+  color: $bluecolor;
+  text-align: center;
+  }
 
 a {
 	color: orange;
   font-weight: bold;
-	&:hover { color: orange; }
-}
-
-.box {
-  border-radius: 35px;
-  height: 400px;
-  width: 400px;
-  background-color: rgba(255,255,255,.5);
-  padding: 15px;
-  margin :10px;
-  overflow: scroll;
+  &:link {text-decoration: none; color: orange;}
 }
 
 .border {
-	border: solid 5px white;
-  border-radius: 15px;
 	height: 250px;
 	padding: 15px;
 	overflow: scroll;
   background-color: rgba(255,255,255,.5)
 }
 
-.background {
-  background-image: url("http://scm-l3.technorati.com/10/04/07/11491/zen-principles-of-social-networking.png");
+.container-fluid {
+  background-color: transparent;
+}
+
+ html {
+  background: url("http://scm-l3.technorati.com/10/04/07/11491/zen-principles-of-social-networking.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: repeat;
+  height: 100%;
   width: 100%;
-  Height: 1000px;
+}
+
+body {background-color: transparent}
+
+.carousel-container {
+  height: 80%;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,.4);
 }
 
 .tall { height: 400px; }
 
 .show-link { margin: 25px 10px; }
 
-.btn { float: left; margin-right: 5px;}
+.btn {
+  float: left;
+  margin-right: 5px;}
 
 .carousel-control.left {
   bottom: 0;
@@ -60,3 +72,9 @@ a {
 .glyphicon-chevron-left:before {
   margin-left: 100px;
 }
+
+.navbar {
+background-color: rgba(255,255,255,.4);
+border: 1px solid transparent;
+}
+
